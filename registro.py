@@ -6,8 +6,11 @@ class RegistroMateria:
         self.materias = []
     def presentarse(self):
         print("****************Presentacion de {} {}****************".format(self.estudiante, self.apellido))
-        for i in self.materias:
-            print(i)
+        if(self.materias):
+            for i in self.materias:
+                print(i)
+        else:
+            print("El estudiante todavia no registro materias")
         return "Soy el est: {} de la carrera de {}".format(self.estudiante, self.carrera)
     def registrarMateria(self):
         print("Gestión de registro de materias")
